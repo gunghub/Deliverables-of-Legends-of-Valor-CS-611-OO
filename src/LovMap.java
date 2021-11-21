@@ -356,13 +356,14 @@ public class LovMap extends Grid {
             if (row % 3 == 2)
                 printable.get(row).append("\n");
         }
-        printable.get(24).append(colors.addColor("yellow", "\tTop Lane\t\t"));
-        printable.get(25).append(colors.addColor("yellow","\t  Mid Lane\t  "));
-        printable.get(26).append(colors.addColor("yellow","\t\t\tBot Lane\t\t\n\n"));
+        printable.get(24).append(colors.addColor("yellow", "      Top Lane        "));
+        printable.get(25).append(colors.addColor("yellow","                     Mid Lane      "));
+        printable.get(26).append(colors.addColor("yellow","                      Bot Lane        \n\n"));
         for (int i = 0; i < (LOV_MAP_SIZE_OF_CELLS + 1) * 3; i++) {
             System.out.print(colors.addColor("cyan", printable.get(i).toString()));
         }
     }
+
 
 
 
