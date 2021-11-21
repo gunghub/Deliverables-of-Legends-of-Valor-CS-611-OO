@@ -30,7 +30,6 @@ public class Graphic {
     public StringBuilder readGraphic(String pathname) {
         StringBuilder sb = new StringBuilder();
         Scanner sc = null;
-        System.out.println(new File(pathname).getAbsolutePath()+"   11111");
         try {
             sc = new Scanner(new File(pathname));
         } catch (FileNotFoundException e) {
