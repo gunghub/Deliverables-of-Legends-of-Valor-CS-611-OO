@@ -1,8 +1,8 @@
 CS611 - Legends of Valor
 Group members:
-Peng Huang
-Yichen Mu
-Shaoliln Xie
+Peng Huang          BU ID: U50250882
+Yichen Mu           BU ID: U30147159
+Shaoliln Xie        BU ID: U51803896
 
 This program is a game of Legends of Valor.
 

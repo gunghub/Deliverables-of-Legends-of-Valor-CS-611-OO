@@ -15,7 +15,7 @@ import java.util.Scanner;
  */
 public class AudioUtility {
     private static final String WORKING_DIRECTORY=System.getProperty("user.dir");
-    private static final String PATH_TO_AUDIOS_FROM_WORKING_DIRECTORY =WORKING_DIRECTORY+"/src/ConfigFiles/audios/";
+    private static final String PATH_TO_AUDIOS_FROM_WORKING_DIRECTORY =WORKING_DIRECTORY+"/src/ConfigFiles/";
 
 
 

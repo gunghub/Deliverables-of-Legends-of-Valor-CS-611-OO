@@ -15,21 +15,22 @@ public class Graphic {
     public static final String cyan = "\u001B[36m";
 
     public Graphic(){
-        banner = readGraphic("./src/ConfigFiles/Banner.txt");
+        banner = readGraphic("src/ConfigFiles/Banner.txt");
         banner.insert(0, purple);
-        levelUp = readGraphic("./src/ConfigFiles/LevelUp.txt");
+        levelUp = readGraphic("src/ConfigFiles/LevelUp.txt");
         levelUp.insert(0, cyan);
-        market = readGraphic("./src/ConfigFiles/Market.txt");
+        market = readGraphic("src/ConfigFiles/Market.txt");
         market.insert(0, green);
-        fight = readGraphic("./src/ConfigFiles/Fight.txt");
+        fight = readGraphic("src/ConfigFiles/Fight.txt");
         fight.insert(0, red);
-        end = readGraphic("./src/ConfigFiles/End.txt");
+        end = readGraphic("src/ConfigFiles/End.txt");
         end.insert(0, cyan);
     }
 
     public StringBuilder readGraphic(String pathname) {
         StringBuilder sb = new StringBuilder();
         Scanner sc = null;
+        System.out.println(new File(pathname).getAbsolutePath()+"   11111");
         try {
             sc = new Scanner(new File(pathname));
         } catch (FileNotFoundException e) {
