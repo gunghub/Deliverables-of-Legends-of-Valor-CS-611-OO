@@ -264,16 +264,16 @@ public class LovMap extends Grid {
                     }
                 }
                 if(heroCounter>1) {
-                    System.err.println("THERE MUST BE SOMETHING WRONG! PLEASE CHECK! ERROR_CODE: 1234123");
-                    System.err.println(row+" "+col);
+                    //System.err.println("THERE MUST BE SOMETHING WRONG! PLEASE CHECK! ERROR_CODE: 1234123");
+                    //System.err.println(row+" "+col);
                 }
                 if(heroCounter>0&&!cells[row][col].isHasHero()){
-                    System.err.println("THERE MUST BE SOMETHING WRONG! PLEASE CHECK! ERROR_CODE: 9089823");
-                    System.err.println(row+" "+col);
+                    //System.err.println("THERE MUST BE SOMETHING WRONG! PLEASE CHECK! ERROR_CODE: 9089823");
+                    //System.err.println(row+" "+col);
                 }
                 if(heroCounter==0&&cells[row][col].isHasHero()){
-                    System.err.println("THERE MUST BE SOMETHING WRONG! PLEASE CHECK! ERROR_CODE: 8712347");
-                    System.err.println(row+" "+col);
+                    //System.err.println("THERE MUST BE SOMETHING WRONG! PLEASE CHECK! ERROR_CODE: 8712347");
+                    //System.err.println(row+" "+col);
                 }
                 //check ends.
             }
@@ -297,13 +297,13 @@ public class LovMap extends Grid {
                     }
                 }
                 if (nonFaintMonsterCounter > 1) {
-                    System.err.println("THERE MUST BE SOMETHING WRONG! PLEASE CHECK! ERROR_CODE: 1812444");
+                    //System.err.println("THERE MUST BE SOMETHING WRONG! PLEASE CHECK! ERROR_CODE: 1812444");
                 }
                 if (nonFaintMonsterCounter > 0 && !cells[row][col].isHasMonster()) {
-                    System.err.println("THERE MUST BE SOMETHING WRONG! PLEASE CHECK! ERROR_CODE: 88734243");
+                    //System.err.println("THERE MUST BE SOMETHING WRONG! PLEASE CHECK! ERROR_CODE: 88734243");
                 }
                 if (nonFaintMonsterCounter == 0 && cells[row][col].isHasMonster()) {
-                    System.err.println("THERE MUST BE SOMETHING WRONG! PLEASE CHECK! ERROR_CODE: 746124o");
+                    //System.err.println("THERE MUST BE SOMETHING WRONG! PLEASE CHECK! ERROR_CODE: 746124o");
                 }
                 //check ends.
             }
@@ -419,7 +419,7 @@ public class LovMap extends Grid {
         if(cellIcon.equals("N")||cellIcon.equals("B")||cellIcon.equals("C")||cellIcon.equals("K")||cellIcon.equals("P")){
             allowed =true;
         }else{
-            System.err.println("THERE MUST BE SOMETHING WRONG! PLEASE CHECK! ERROR_CODE: 38424");
+            //System.err.println("THERE MUST BE SOMETHING WRONG! PLEASE CHECK! ERROR_CODE: 38424");
             return false;
         }
 

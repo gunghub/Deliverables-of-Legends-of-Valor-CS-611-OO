@@ -62,7 +62,7 @@ public class AudioUtility {
      * @param loop if you want to loop infinitely, set loop as true, otherwise false as default.
      *
      */
-    public synchronized static void playSound(String audioFileName, boolean loop ) {
+    public synchronized static void playSound(String audioFileName, boolean loop ,float volumeOffset) {
         Thread thread=new Thread(new Runnable() {
             public void run() {
                 try
@@ -75,7 +75,7 @@ public class AudioUtility {
                     }
 
                     FloatControl volume= (FloatControl) clip.getControl(FloatControl.Type.MASTER_GAIN);
-                    //volume.setValue(volumeOffset);
+                    volume.setValue(volumeOffset);
 
                     clip.start();
 
@@ -93,7 +93,7 @@ public class AudioUtility {
     }
 
     public static void playSound(String audioFileName){
-        playSound(audioFileName, false);
+        playSound(audioFileName, false,0);
     }
 
 }

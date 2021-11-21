@@ -24,7 +24,7 @@ public abstract class Monster extends Character {
             grid.getCells()[row][col].setHasMonster(true);
             lane.setMaxMonsterRow(lane.getMaxMonsterRow()+1);
             System.out.println(colors.addColorHOrM("yellow", "\nMonster's turn ---\nM" +(index+1)+" moved forward.", "purple"));
-            AudioUtility.playSound(AudioUtility.DRAGON_ROAR);
+            AudioUtility.playSound(AudioUtility.DRAGON_ROAR,false,6f);
 
         }
     }
