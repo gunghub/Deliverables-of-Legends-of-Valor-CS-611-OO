@@ -11,8 +11,6 @@ public abstract class Hero extends Character {
     private Inventory inventory;
     private Weapon currentWeapon;
     private Armor currentArmor;
-
-    protected Graphic graphic;
     protected Colors colors;
     private int row;
     private int col;
@@ -71,7 +69,7 @@ public abstract class Hero extends Character {
             switch (move) {
                 case 1: //attack
                     if (withinRange(grid)) {
-                        graphic.printFight();
+                        System.out.println(colors.addColor("red", "You are in a fight! Fight for yourself!!"));
                         attack(getNeighborMonster(grid, lovgame), null, grid);
                     } else {
                         System.out.println(colors.addColor("red", "No monster is within your attacking range. Please try another move!\n"));
@@ -389,8 +387,7 @@ public abstract class Hero extends Character {
                     break;
 
                 case 8: //quit
-//                    System.out.println(colors.addColor("red", "Thanks for playing! Exiting program..."));
-                    graphic.printEnd();
+                    System.out.println(colors.addColor("red", "Thanks for playing! Exiting program..."));
                     play = false;
                     break;
             }

@@ -2,13 +2,11 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Markets {
-    private final Graphic graphic;
     private Inventory market;
     private boolean isShopping;
     protected Colors colors;
 
     public Markets() {
-        graphic = new Graphic();
         market = new Inventory();
         colors = new Colors();
     }
@@ -22,7 +20,7 @@ public class Markets {
         System.out.println(colors.addColor("purple", "You are at Nexus. Would you like to enter the market?(y/n)"));
         isShopping = ScannerParser.parseBoolean();
         while (isShopping) {
-            graphic.printMarket();
+            System.out.println(colors.addColor("green", "Welcome to the Market!"));
             enterStore(h);
         }
         System.out.println(colors.addColor("red", "Hero left the market.\n"));
