@@ -22,7 +22,7 @@ public class AudioUtility {
     public static final String DRAGON_ROAR ="dragon_roar.wav";
 //    public static final String GAME_AWARD="F5YUGD6-game-award.wav";
     public static final String LIGHT_HIT="light_hit.wav";
-    public static final String EPIC_DAMAGE="epic_damage.wav";
+    public static final String EPIC_DAMAGE="epic_damage-compressed.wav";
     public static final String LEVEL_UP="mixkit-completion-of-a-level-2063.wav";
     public static final String WIN="win.wav";
     public static final String LOSE="mixkit-player-losing-or-failing-2042.wav";
@@ -34,19 +34,19 @@ public class AudioUtility {
     /**
      * Background music
      */
-    public static final String BGM_THE_GREAT_BATTLE="alexander-nakarada-the-great-battle.wav";
+    public static final String BGM_THE_GREAT_BATTLE="alexander-nakarada-the-great-battle-compressed.wav";
 
 
-//    /**
-//     * Demo entry for this utility
-//     *
-//     * @param args
-//     */
+    /**
+     * Demo entry for this utility
+     *
+     * @param args
+     */
 //    public static void main(String[] args) {
 //        //AudioUtility.playSound(DRAGON_ROAR); // DEMO play the dragon roar once.
-//        AudioUtility.playSound(BGM_THE_GREAT_BATTLE,true); //DEMO play the bgm repeatedly.
-//
-//        AudioUtility.playSound(WIN);
+//        //AudioUtility.playSound(BGM_THE_GREAT_BATTLE,true,0); //DEMO play the bgm repeatedly.
+//        //AudioUtility.playSound(EPIC_DAMAGE);
+//        //AudioUtility.playSound(WIN);
 //
 //
 //        Scanner scanner=new Scanner(System.in);
