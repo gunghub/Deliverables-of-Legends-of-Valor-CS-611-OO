@@ -7,13 +7,12 @@ Shaolin Xie         BU ID: U51803896
 This program is a game of Legends of Valor.
 
 1. Compile and run
-- (go to the program directory where src lies)
+Navigate to the directory after downloading the project.
+Run the following instructions on command line:
 1) cd src
 2) javac Main.java
 3) cd ..
 4) java -classpath src Main
-
-* we recommend running the program (run Main.java) in Intellij in order for the console format to work correctly
 
 2. Design pattern
 We used the Factory design pattern. We used it to create new monsters, heroes, and items(weapons, potion, armors, spells).
@@ -23,7 +22,6 @@ We also used the Observers Pattern in Lane class, which maintains a set of Heroe
 utilizing all the heroes' information when necessary.
 
 3. Bonus points
-- Extra graphics!
 - Colorful console!
 - Music and sound effects!
 - Factory and Observer design pattern!
@@ -33,8 +31,6 @@ utilizing all the heroes' information when necessary.
 MacOS
 
 Enjoy the game!
-
-
 
 ------------Class Hierarchy-------------
 Main ----- main class the entry of the program
@@ -97,7 +93,5 @@ Printer ------ class to print shop/ heroes/ monsters/ weapon/ spell/ potion/ arm
 Colors ------ class for console colors
 Factory ----- class to create objects
 AudioUtility ------ class to add audios
-Graphic ----- class to add graphics
-
 
 
